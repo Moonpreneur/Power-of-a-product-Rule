@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Power of a Product Rule</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+
+    <body>
+        <div id="left-image">
+            <img src="Asset 1.png" alt="Left Image">
+        </div>
+        <div id="right-image">
+            <img src="Asset 2.png" alt="Right Image">
+        </div>
+        <div id="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <div id="image-container">
+            <img src="Asset 5.png" alt="Measurement Game Image">
+        </div>
+            <div id="container">
+                <div id="score"style="display: none;">
+                    Score <br>
+                    <br><span id="scorevalue">0</span>
+                </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try Again
+            </div>
+            <div id="question">
+
+
+            </div>
+            <div id="instruction">
+                Click on the Correct Answer
+            </div>
+            <div id="choices">
+                <div id="box1" class="box"></div>
+                <div id="box2" class="box"></div>
+                <div id="box3" class="box"></div>
+                <div id="box4" class="box"></div>
+            </div>
+            <img id="startreset" src="play.png" alt="Play" style="cursor: pointer;" onclick="startReset()" />
+            <div id="timeremaining" style="display: none;">
+                <div>Time remaining</div>
+                <br>
+                <br>
+                <br>
+                <br><br> <br>
+                <span id="timeremainingvalue">120</span>
+                <div></div>
+            </div>
+            <div id="gameOver">
+            </div>
+        </div>
+        <div id="bulb-container">
+            <img src="bulb.png" alt="bulb">
+        </div>
+
+
+        <!-- script -->
+        <script type="text/javascript" src="script.js"></script>
+        <script src="questions.js"></script>
+        <audio id="correctAnswerSound" src="correct-6033.mp3" type="audio/mp3"></audio>
+        <audio id="IncorrectAnswerSound" src="buzzer-or-wrong-answer-20582.mp3" type="audio/mp3"></audio>
+    </body>
+
